@@ -209,6 +209,18 @@
             runningPrograms.update(values => {
                 return [...values, program];
             })
+        } else if(path == './programs/contact_us.svelte'){
+            const Program = (await import('./programs/contact_us.svelte')).default;
+            let program = new Program({
+                target: node_ref,
+                props: {id: short.generate(), parentNode: node_ref, exec_path: path}
+            });
+            program.self = program;
+
+            //add to program tray
+            runningPrograms.update(values => {
+                return [...values, program];
+            })
         } else if(path == './programs/codeutsava.svelte'){
             const Program = (await import('./programs/codeutsava.svelte')).default;
             let program = new Program({

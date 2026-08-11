@@ -160,6 +160,24 @@
             date_modified: 1676799354180,
             sort_option: 0,
             sort_order: 0
+        },
+        {
+            id: 'cnZx4Ht7Pm2Wq9RvJd6Nbs',
+            type: 'file',
+            basename: 'Contact Us',
+            name: 'Contact Us.exe',
+            storage_type: 'fake',
+            url: './programs/contact_us.svelte',
+            ext: '.exe',
+            parent: desktop_folder,
+            size: 2140,
+            executable: true,
+            icon: '/images/xp/icons/AddressBook.png',
+            children: [],
+            date_created: 1676799354180,
+            date_modified: 1676799354180,
+            sort_option: 0,
+            sort_order: 0
         }
     ];
 
