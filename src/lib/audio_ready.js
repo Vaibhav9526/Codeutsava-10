@@ -10,19 +10,27 @@
 //   audio.play().catch(...)
 
 let resolve_ready;
-export const audio_ready = new Promise((resolve) => { resolve_ready = resolve; });
+export const audio_ready = new Promise((resolve) => {
+  resolve_ready = resolve;
+});
 
-const GESTURE_TYPES = ['pointerdown', 'keydown', 'touchstart', 'click'];
+const GESTURE_TYPES = [
+  "pointerdown",
+  "keydown",
+  "touchstart",
+  "click",
+  "mouseover",
+];
 
-function unlock(){
-    if(resolve_ready == null) return;
-    resolve_ready();
-    resolve_ready = null;
-    for(const type of GESTURE_TYPES){
-        window.removeEventListener(type, unlock, true);
-    }
+function unlock() {
+  if (resolve_ready == null) return;
+  resolve_ready();
+  resolve_ready = null;
+  for (const type of GESTURE_TYPES) {
+    window.removeEventListener(type, unlock, true);
+  }
 }
 
-for(const type of GESTURE_TYPES){
-    window.addEventListener(type, unlock, {once: true, capture: true});
+for (const type of GESTURE_TYPES) {
+  window.addEventListener(type, unlock, { once: true, capture: true });
 }
