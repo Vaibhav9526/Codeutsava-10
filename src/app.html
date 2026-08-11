@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="" style="background:black">
+	<head>
+		<meta charset="utf-8" />
+		<title>Microsoft Windows XP Professional</title>
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="stylesheet" id="theme" href=""/>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="description" content="Yet another Windows XP in the browser, but with a File System and comes with it, Programs."/>
+		%sveltekit.head%
+
+		<style>
+			html, body {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			}
+
+			section {
+			width: 100vw;
+			height: 100vh;
+			}
+
+			p {
+			margin: 0;
+			line-height: 1.5em;
+			}
+		</style>
+		
+	</head>
+	<body>
+
+		<div id="iframe-preload" style="position: absolute;inset: 0;display: none;"></div>
+		
+		<div style="position:absolute;inset:0;">%sveltekit.body%</div>
+
+		<script>
+			window.addEventListener('contextmenu', (event) => {
+				event.preventDefault();
+			})
+		</script>
+		
+		<script src="//unpkg.com/loadjs@latest/dist/loadjs.min.js"></script>
+
+		<script>
+			//load_assets is a global helper, src/routes/xp/starting.svelte calls it
+			//to preload the XP assets behind the loading screen.
+			function load_assets(assets, completion){
+				Promise
+				.all(assets.map(asset=>fetch(asset)))
+				.then(responses =>
+					Promise.all(responses.map(res => res.blob()))
+				).then(completion);
+			}
+		</script>
+
+		<script>
+
+			document.addEventListener('dragover', function(e){
+				e.preventDefault();
+				console.log('dragover');
+			})
+		
+			document.addEventListener('drop', function(e){
+				e.preventDefault();
+				console.log('drop');
+			})
+		</script>
+
+	</body>
+</html>
+
