@@ -1,7 +1,7 @@
 {
   "name": "codeutsava-10.0",
   "version": "0.0.1",
-  "main": "build/index.js",
+  "main": "index.js",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
