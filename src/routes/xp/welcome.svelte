@@ -36,7 +36,6 @@
         if(destroyed) return;
         destroyed = true;
         clearTimeout(fallback_timer);
-        welcome_audio?.cancel_retry();
         self.$destroy();
         on_destroyed();
     }
