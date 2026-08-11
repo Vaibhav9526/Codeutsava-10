@@ -178,6 +178,24 @@
             date_modified: 1676799354180,
             sort_option: 0,
             sort_order: 0
+        },
+        {
+            id: 'fqLp5Kd9Vn3Zt8YwBc4Mhr',
+            type: 'file',
+            basename: 'FAQs',
+            name: 'FAQs.exe',
+            storage_type: 'fake',
+            url: './programs/faqs.svelte',
+            ext: '.exe',
+            parent: desktop_folder,
+            size: 1980,
+            executable: true,
+            icon: '/images/xp/icons/Information.png',
+            children: [],
+            date_created: 1676799354180,
+            date_modified: 1676799354180,
+            sort_option: 0,
+            sort_order: 0
         }
     ];
 
