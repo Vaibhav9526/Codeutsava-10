@@ -1,9 +1,10 @@
 {
   "name": "codeutsava-10.0",
   "version": "0.0.1",
+  "main": "build/index.js",
   "scripts": {
     "dev": "vite dev",
-    "build": "build/index.js",
+    "build": "vite build",
     "package": "svelte-kit package",
     "preview": "vite preview"
   },
