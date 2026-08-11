@@ -6,7 +6,7 @@
 
 # theme : Retro
 
-## live link : https://codeutsava-10.onrender.com/
+## live link : https://codeutsava-10.vercel.app/
 
 ## drive link : https://drive.google.com/file/d/1k18Fy06TRPqPiLNubWWVlitElt222DYs/view?usp=sharing
 
