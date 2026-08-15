@@ -1,13 +1,8 @@
-﻿# Codeutsava-10
-
-# Name : Vaibhav sharma
-
-# branch : MME
-
-# theme : Retro
-
-## live link : https://codeutsava-10.vercel.app/
-
-## drive link : https://drive.google.com/file/d/1k18Fy06TRPqPiLNubWWVlitElt222DYs/view?usp=sharing
+# Windows XP themed hackathon website
 
 ## youtube link : https://www.youtube.com/watch?v=Cz7dftUpBVA
+
+## will add more features to it 
+
+
+### author : Vaibhav sharma
